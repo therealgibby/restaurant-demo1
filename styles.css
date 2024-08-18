@@ -62,7 +62,7 @@ img {
 	padding: 16px;
 	display: flex;
 	align-items: center;
-	gap: 6%;
+	gap: 200px;
 	width: 100%;
 	flex-basis: 100%;
 	transition: background-color 0.5s ease-in-out;
@@ -327,3 +327,30 @@ img {
 	display: block;
 	margin: 52px auto 0 auto;
 }
+
+@media screen and (max-width: 450px) {
+	.navbar {
+		gap: 40px;
+	}
+
+	.navbar-links {
+		gap: 30px;
+	}
+
+	.navbar-sticky + .hero-content {
+		padding-top: 112px;
+	}
+
+	.hero-content {
+		text-align: center;
+		align-items: center;
+		margin: 0 15%;
+		padding-top: 20px;
+		padding-bottom: 150px;
+	}
+
+	.menu-button {
+		min-width: 200px;
+	}
+}
+
