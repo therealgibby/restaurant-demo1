@@ -338,14 +338,14 @@ img {
 	}
 
 	.navbar-sticky + .hero-content {
-		padding-top: 112px;
+		padding-top: 92px;
 	}
 
 	.hero-content {
 		text-align: center;
 		align-items: center;
 		margin: 0 15%;
-		padding-top: 20px;
+		padding-top: 0;
 		padding-bottom: 150px;
 	}
 
