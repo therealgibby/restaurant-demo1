@@ -91,7 +91,7 @@ img {
 }
 
 .navbar-sticky + .hero-content {
-	padding-top: 228px;
+	margin-top: calc(10% + 80px);
 }
 
 .navbar-sticky > div > a {
@@ -131,11 +131,11 @@ img {
 }
 
 .hero-content {
-	margin: 0 15%;
+	margin: 10% 15%;
 	gap: 0;
 	display: flex;
 	flex-direction: column;
-	padding-top: 148px;
+	/* padding-top: 148px; */
 	padding-bottom: 150px;
 	height: 100%;
 	max-width: 800px;
@@ -237,8 +237,8 @@ img {
 }
 
 .menu-section {
-	margin: 140px auto;
-	padding: 0 16px 100px 16px;
+	margin: 140px auto 0 auto;
+	padding: 0 16px 200px 16px;
 	text-align: center;
 }
 
@@ -247,7 +247,7 @@ img {
 		linear-gradient(
 			180deg,
 			rgba(255, 255, 255, 1) 30%,
-			rgba(0, 40, 92, 1) 140%
+			rgba(0, 40, 92, 1) 130%
 		);
 	background-position: center;
 	background-position-y: top;
@@ -334,6 +334,31 @@ img {
 	margin: 52px auto 0 auto;
 }
 
+@media (orientation: landscape) and (max-width: 1200px) {
+	.navbar-sticky + .hero-content {
+		margin-top: 0;
+		padding-top: 80px;
+	}
+
+	.hero-image {
+		height: 150vh;
+	}
+
+	.hero-content {
+		margin: 0 10%;
+		text-align: center;
+		align-items: center;
+		padding-top: 0;
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		gap: 100px;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	.navbar {
 		gap: 40px;
@@ -344,13 +369,14 @@ img {
 	}
 
 	.navbar-sticky + .hero-content {
+		margin-top: 0;
 		padding-top: 80px;
 	}
 
 	.hero-content {
 		text-align: center;
 		align-items: center;
-		margin: 0 15%;
+		margin: 0 10%;
 		padding-top: 0;
 		padding-bottom: 150px;
 	}
@@ -358,4 +384,9 @@ img {
 	.menu-button {
 		min-width: 200px;
 	}
+}
+
+.random {
+	background-color: var(--colorsecondary);
+	height: 200px;
 }
