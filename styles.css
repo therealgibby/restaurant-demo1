@@ -349,7 +349,6 @@ img {
 
 .contact-parent {
 	background-color: var(--colorsecondary);
-	padding: 50px 0;
 }
 
 .contact-section {
@@ -360,14 +359,14 @@ img {
 	gap: 40px;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
+	padding: 60px 20px;
 }
 
 .contact-section > p {
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 }
 
