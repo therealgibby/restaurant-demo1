@@ -382,6 +382,102 @@ img {
 	border-radius: 10px;
 }
 
+.menu-order-parent {
+	width: 100%;
+	background-color: var(--colorprimary);
+}
+
+.menu-order-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 120px 20px;
+}
+
+.menu-order {
+	margin: 0 auto;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	box-shadow: 0px 5px 20px 1px var(--coloropaque);
+}
+
+.menu-order-imagecontainer {
+	display: flex;
+	overflow: hidden;
+}
+
+.menu-order-third {
+	flex-basis: 33.33%;
+	min-width: 320px;
+	color: var(--colorsecondary);
+}
+
+.menu-order-content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: center;
+	padding: 30px;
+}
+
+.menu-order-content:nth-of-type(3) {
+	color: var(--colorprimary);
+	background-color: var(--colorsecondary);
+}
+
+.menu-order-content > h3 {
+	margin-top: 0;
+}
+
+.order-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.order-buttons > a {
+	margin-top: 36px;
+	font-weight: bold;
+	background-color: var(--coloraccent);
+	color: var(--colorprimary);
+	max-width: 200px;
+	min-width: 100px;
+	text-decoration: none;
+	padding: 20px 40px;
+	text-align: center;
+	border-radius: 10px;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.menu-order-content:nth-of-type(2) > div > a {
+	min-width: 150px;
+}
+
+@media screen and (max-width: 1150px) {
+	.menu-order-third {
+		max-height: 500px;
+		max-width: 370px;
+	}
+	.menu-order {
+		max-width: 370px;
+		flex-direction: column;
+	}
+
+	.menu-order-content {
+		padding: 30px 10px;
+	}
+
+	.menu-order-content:nth-of-type(2) > div > a {
+		min-width: 150px;
+	}
+
+	.order-buttons {
+		justify-content: center;
+	}
+}
+
 @media screen and (orientation: landscape) and (max-height: 600px) {
 	.hero-image {
 		height: 150vh;
